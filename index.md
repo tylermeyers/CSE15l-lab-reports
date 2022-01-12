@@ -16,3 +16,5 @@
 > print '3'
 > print 'hi' 
 > ```
+
+[Lab Report 1](https://tylermeyers.github.io/CSE15l-lab-reports/lab-report-1-week-2.html
