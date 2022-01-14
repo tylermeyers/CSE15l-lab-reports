@@ -1,15 +1,10 @@
 # How To Log Into a Couse-Specific Account on ieng6
 
-## Quick links
-(insert step 1) etc
-
-
 ## Step 1: Installing VS Code
 ![Image](vscodeSS.png)
 1. Firstly, you must download and install [VSCode](https://code.visualstudio.com/Download) to be able to connect.
 2. Choose which operating system you use and follow the instructions to install.
-------------------------------------------------------------
-------------------------------------------------------------
+
 ------------------------------------------------------------
 ## Step 2: Remotely Connecting
 1. Windows users should firstly download [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).
@@ -18,19 +13,19 @@
 4. Within the terminal, input:
 `ssh cse15lwi22abe@ieng6.ucsd.edu` (switched with your specific account) and input password.
 5. Answer yes if prompted.
+
 ![Image](connectSS.png)
 6. If something similar comes up then you will be connected!
----
----
+
 ---
 ## Step 3: Trying Commands
 1. Try inputing *`cd, ls, pwd, mkdir, cp`* in the terminal.
 2. Once you're satisfied, to exit input *`exit`*.
 3. **Example**:
+
 ![Image](commandSS.png)
 * What do you think *`ls`* does? (Hint: lists)
----
----
+
 ---
 ## Step 4: Moving Files (SCP)
 1. Make sure you are not still within **ieng6**.
@@ -42,6 +37,7 @@
 6. Input *`ls`* to check that the file is within the directory.
 7. After, inputing *`javac`* then *`java`* will run the code on the server!
 8. **Example**:
+
 ![Image](EXAMPLESS.png)
 * **Code Transfered**
 ```
@@ -54,13 +50,13 @@ class WhereAmI {
   }
 }
 ```
-------------------------------------------------------------
----
+
 ---
 ## Step 5: Setting an SSH Key
 * Logging in and running scp is time consuming due to having to input your password every time. To get around this you can use ssh keys that create a public and private key that can be used with *`ssh`* in place of your password.
 1. Set up by inputing *`ssh-keygen`*. 
 **Example**:
+
 ![Image](SSHSS.png)
 * This creates the private key saved within file `id_rsa` and the public key to the `id_rsa.pub` file.
 2. Next copy the public key to the .ssh directory of your user account on the server.
@@ -72,8 +68,7 @@ exit
 scp /Users/Machine/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
 3. After, you should be able to ssh and scp without using a password!
----
----
+
 ---
 ## Step 6: Optimizing (Editing and Uploading a File)
 1. The best way of optimization, in my opionion, is to deffinitely to set up an ssh key to knock off the time that it takes to input your password.
