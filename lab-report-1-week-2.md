@@ -15,6 +15,7 @@
 5. Answer yes if prompted.
 
 ![Image](connectSS.png)
+
 6. If something similar comes up then you will be connected!
 
 ---
@@ -24,6 +25,7 @@
 3. **Example**:
 
 ![Image](commandSS.png)
+
 * What do you think *`ls`* does? (Hint: lists)
 
 ---
@@ -39,6 +41,7 @@
 8. **Example**:
 
 ![Image](EXAMPLESS.png)
+
 * **Code Transfered**
 ```
 class WhereAmI {
@@ -58,6 +61,7 @@ class WhereAmI {
 **Example**:
 
 ![Image](SSHSS.png)
+
 * This creates the private key saved within file `id_rsa` and the public key to the `id_rsa.pub` file.
 2. Next copy the public key to the .ssh directory of your user account on the server.
 **Example**: 
