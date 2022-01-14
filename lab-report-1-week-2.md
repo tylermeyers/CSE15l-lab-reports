@@ -1,4 +1,4 @@
-# How To Log Into a Couse-Specific Account on ieng6
+# How To Log Into a Course-Specific Account on ieng6
 
 ## Step 1: Installing VS Code
 ![Image](vscodeSS.png)
