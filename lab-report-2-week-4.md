@@ -22,7 +22,4 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 ```
 The failure inducing input causes a never-ending while loop that had caused the OutOfMemoryError error. This had happened because there was an open "[" and the program was continuously searching for the closed "]", but never found it and continued.
 
-------
-=======
-
->>>>>>> b655d8ca313204f367f3c144cc3e220ebe54826a
+---
