@@ -57,14 +57,14 @@ class WhereAmI {
 ---
 ## Step 5: Setting an SSH Key
 * Logging in and running scp is time consuming due to having to input your password every time. To get around this you can use ssh keys that create a public and private key that can be used with *`ssh`* in place of your password.
-1. Set up by inputing *`ssh-keygen`*. 
+1. Set up by inputing *`ssh-keygen`*.
 **Example**:
 
 ![Image](SSHSS.png)
 
 * This creates the private key saved within file `id_rsa` and the public key to the `id_rsa.pub` file.
 2. Next copy the public key to the .ssh directory of your user account on the server.
-**Example**: 
+**Example**:
 ```
 (on server)
 mkdir .ssh
@@ -78,6 +78,6 @@ scp /Users/Machine/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_ke
 1. The best way of optimization, in my opionion, is to deffinitely to set up an ssh key to knock off the time that it takes to input your password.
 2. Then to also cut down on time, you can press the "up" arrow on your keyboard to automatically paste previous commands.
 ![Image](gif.gif)
-* To optimize uploading and running a file on the server, I would firstly do whatever edit I wanted then upload via scp(key gen auto). Still within the client, I would also input: 
-`ssh cs15lwi22@ieng6.ucsd.edu "cp File.java"`
-Which logs into the server, runs the input, and exits.
+* To optimize uploading and running a file on the server, I would firstly do whatever edit I wanted then upload via scp(key gen auto). Still within the client, I would also input:
+`ssh cs15lwi22abe@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` (WhereAmI being replaced with whatever file is on the server).
+Which logs into the server, compiles and runs the file, and exits. If everything is able to be pasted via arrow keys, this can be done in less than 10 key strokes (it took me 9).
