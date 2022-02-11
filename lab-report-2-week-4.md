@@ -28,4 +28,4 @@ The failure inducing input caused a never-ending while loop that had caused the 
 ```
 []
 ```
-The faulure inducing input caused the program to output just brackets without a link. The bug caused the symptom as the code wrongly identified the empty brackets as being a link because it did not check whether or not there was something within the brackets prior.
+The faulure inducing input caused the program to output just brackets without a link. The bug caused the symptom as the code wrongly identified the empty brackets as being a link because it did not check whether or not there was something within the brackets prior. 
