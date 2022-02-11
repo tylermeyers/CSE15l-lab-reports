@@ -20,6 +20,12 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
         at MarkdownParse.getLinks(MarkdownParse.java:18)
         at MarkdownParse.main(MarkdownParse.java:26)
 ```
-The failure inducing input causes a never-ending while loop that had caused the OutOfMemoryError error. This had happened because there was an open "[" and the program was continuously searching for the closed "]", but never found it and continued.
+The failure inducing input caused a never-ending while loop that had caused the OutOfMemoryError error. This had happened because there was an open "[" and the program was continuously searching for the closed "]", but never found it and continued.
 
 ---
+![image](3ss.png)
+[Test Causing Failure](https://github.com/tylermeyers/markdown-parse/blob/main/test-file3.md)
+```
+[]
+```
+The faulure inducing input caused the program to output just brackets without a link. The bug caused the symptom as the code wrongly identified the empty brackets as being a link because it did not check whether or not there was something within the brackets prior.
