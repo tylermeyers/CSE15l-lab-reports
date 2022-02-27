@@ -9,6 +9,5 @@
 
 ## one line upload and run
 With this command...
-![image](ff.png)
-I got this output, but I'm not sure if this is "acceptable" as my MarkdownParse is faulty somehow.
-![image](sss.png)
+![image](real.png)
+![image](real2.png)
