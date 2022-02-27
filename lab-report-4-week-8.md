@@ -2,6 +2,8 @@
 
 [My Repo](https://github.com/tylermeyers/markdown-parse/blob/main/MarkdownParse.java)
 
+[Other Repo](https://github.com/ShashankVenkatramani/markdown-parse/)
+
 ---
 ## Snippet 1
 ---
