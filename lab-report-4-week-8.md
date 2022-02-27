@@ -1,32 +1,38 @@
-`[a link`](url.com)
+# Week 8 Lab Report
 
-[another link](`google.com)`
+[My Repo](https://github.com/tylermeyers/markdown-parse/blob/main/MarkdownParse.java)
 
-[`cod[e`](google.com)
+---
+## Snippet 1
+---
+Expected:
+`['google.com,google.com,ucsd.edu]`
+![image](snip1.png)
+Output(fail):
+![image](snip1.0.png)
+Other MarkdownParse
+![image](otherSnip1.png)
 
-[`code]`](ucsd.edu)
+---
+## Snippet 2
+---
+Expected:
+`[a.com,a.com(()),example.com]`
+![image](snip2.png)
+Output(fail):
+![image](snip2.0.png)
+Other MarkdownParse
+![image](otherSnip2.png)
 
-[a [nested link](a.com)](b.com)
-
-[a nested parenthesized url](a.com(()))
-
-[some escaped \[ brackets \]](example.com)
-
-[this title text is really long and takes up more than
-one line](
-    https://ucsd-cse15l-w22.github.io/
-)
-
-
-
-[this link doesn't have a closing parenthesis](github.com
-
-And there's still some more text after that.
-
-[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+---
+## Snippet 3
+---
+Expected:
+`[https://ucsd-cse15l-wi22.github.io/]`
+![image](snip33.png)
+Output(fail):
+![image](snip3.0.png)
+Other MarkdownParse
+![image](otherSnip3.png)
 
 
-
-)
-
-And then there's more text
